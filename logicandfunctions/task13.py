@@ -6,6 +6,11 @@ values to its right do not count. So
 if b i 13 then both b and c do not count.
 """
 
-def lucky_sum(a, b, ):
+def lucky_sum(a, b, c):
     if a == 13:
-        return
+        return b+c
+    if b == 13:
+        return a+c
+    if c == 13:
+        return a+b
+    return a+b+c
