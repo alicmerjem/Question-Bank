@@ -8,9 +8,9 @@ if b i 13 then both b and c do not count.
 
 def lucky_sum(a, b, c):
     if a == 13:
-        return b+c
+        return 0
     if b == 13:
-        return a+c
+        return a
     if c == 13:
         return a+b
     return a+b+c
