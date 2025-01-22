@@ -12,7 +12,7 @@ def make_bricks(small, big, goal):
     if max_big > big:
         goal -= big * 5
     else:
-        goal -= big * 5
+        goal -= max_big * 5
     return goal <= small
 
 print(make_bricks(3, 1, 8))
